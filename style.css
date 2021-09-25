@@ -1,0 +1,81 @@
+/* {
+    box sizing: border-box;
+} */
+
+body {
+    background: linear-Gradient(
+        133deg,
+        rgb(243, 164, 6) 0%,
+        rgb(236, 205, 105) 50%,
+        rgb(247, 89, 89) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Press Start 2P' ;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+}
+
+#pokeDex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+}
+
+.pokeCard {
+    list-style: none;
+    padding: 20px;
+    background-color: #f3dd13;
+    color: rgb(25, 17, 148);
+  text-align: center;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+
+.pokeCard-title {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: normal;
+}
+.pokeCard-subtitle {
+    margin-top: 5px;
+    color: green;
+    font-weight: lighter;
+}
+
+.pokeCard-image {
+    height: 600px;
+}
+
+.pokeCard:hover {
+    animation: bounce 0.5s linear;
+}
+
+ @keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+} 
